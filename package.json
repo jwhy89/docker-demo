@@ -8,6 +8,10 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "docker": "docker",
+    "docker:build": "docker build -t jwhy89/docker-demo .",
+    "docker:start": "docker run -p 3000:3000 jwhy89/docker-demo",
+    "docker:push": "docker push jwhy89/docker-demo:main",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
