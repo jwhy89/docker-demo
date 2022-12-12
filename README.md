@@ -61,13 +61,13 @@ $ npm run test:cov
 ## Docker
 
 ```bash
-# unit tests
+# build and test the jwhy89/docker-demo container
 $ npm run docker:build
 
-# e2e tests
+# run the jwhy89/docker-demo container
 $ npm run docker:start
 
-# test coverage
+# push the container to dockerhub with the main tag
 $ npm run docker:push
 ```
 
